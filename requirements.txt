@@ -1,0 +1,6 @@
+fastapi[standard]
+uvicorn
+sqlalchemy
+jinja2
+huggingface_hub
+psycopg2-binary
