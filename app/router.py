@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-import translate
-import endpoint
+import app.translate as translate
+import app.endpoint as endpoint
 
 router = APIRouter()
 

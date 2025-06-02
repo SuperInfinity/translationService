@@ -2,12 +2,12 @@ from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException
 from pydantic import BaseModel
 from starlette.responses import Response
 from http import HTTPStatus
-import schemas
-import crud
-import models
-from database import get_db, engine
+import app.schemas as schemas
+import app.crud as crud
+import app.models as models
+from app.database import get_db, engine
 from sqlalchemy.orm import Session
-from utils import perform_translation
+from app.utils import perform_translation
 
 
 models.Base.metadata.create_all(bind=engine)

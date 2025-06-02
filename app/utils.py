@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-import crud
+import app.crud as crud
 from dotenv import load_dotenv
 import os
 from huggingface_hub import InferenceClient
